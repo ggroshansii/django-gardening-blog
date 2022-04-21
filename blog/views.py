@@ -15,5 +15,5 @@ def index(request):
 def posts(request):
     return HttpResponse("all posts")
 
-def post_detail(request, post_detail):
-    return HttpResponse(blog_posts[post_detail])
+def post_detail(request):
+    return HttpResponse()
