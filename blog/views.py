@@ -1,4 +1,4 @@
-from http.client import HTTPResponse
+
 from django.shortcuts import render
 from django.http import HttpResponse 
 
@@ -9,8 +9,8 @@ blog_posts = {
     "soil_amendments": "add these things to your soil: lime, gypsum, organic matter"
 }
 
-def index(request):
-    return HttpResponse("homepage")
+def home_page(request):
+    return render(request, "blog/index.html")
 
 def posts(request):
     return HttpResponse("all posts")
