@@ -13,7 +13,7 @@ def home_page(request):
     return render(request, "blog/index.html")
 
 def posts(request):
-    return HttpResponse("all posts")
+    return render(request, "blog/posts.html")
 
 def post_detail(request):
     return HttpResponse()
