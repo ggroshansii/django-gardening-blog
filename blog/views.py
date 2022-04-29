@@ -15,5 +15,5 @@ def home_page(request):
 def posts(request):
     return render(request, "blog/posts.html")
 
-def post_detail(request):
-    return HttpResponse()
+def post_detail(request, slug):
+    pass
