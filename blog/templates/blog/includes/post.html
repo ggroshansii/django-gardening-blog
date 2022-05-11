@@ -2,11 +2,11 @@
 
 <li>
     <article class="post">
-       <a href="{% url "post-detail-page" "the-mountains" %}">
-           <img src="{% static 'blog/images/gardening-2.jpg' %}" alt="Mountain Hiking">
+       <a href="{% url "post-detail-page" post.slug %}">
+           <img src="{% static 'blog/images/'|add:post.image %}" alt={{post.title}}>
            <div clas="post__content">
-            <h3>Types of Soils</h3>
-            <p>There are 12 different soil orders in the USA</p>
+            <h3>{{ post.title}}</h3>
+            <p>{{ post.excerpt}}</p>
            </div>
        </a> 
     </article>
